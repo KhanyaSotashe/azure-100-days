@@ -7,4 +7,7 @@ Today I was tasked with creating a virtual network named devops-vnet in the east
 * I configured custom IPv4 CIDR blocks to define the private IP address space.
 
 ## Screenshots
-![Architecture Diagram](./screenshot.png)
+![Architecture Diagram](./Scenario.png)
+![Architecture Diagram](./Create-Vnet.png)
+![Architecture Diagram](./Configure-Address.png)
+![Architecture Diagram](./Deploy.png)
