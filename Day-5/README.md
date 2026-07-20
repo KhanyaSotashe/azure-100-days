@@ -9,6 +9,8 @@ Today I was tasked with creating a Virtual Network named datacenter-vnet in the 
 
 ## Screenshots
 ![Architecture Diagram](./Scenario.png)
-![Architecture Diagram](./Create-Vnet.png)
-![Architecture Diagram](./Configure-Address.png)
-![Architecture Diagram](./Deploy.png)
+![Architecture Diagram](./Step-1.png)
+![Architecture Diagram](./Step-2.png)
+![Architecture Diagram](./Step-3.png)
+![Architecture Diagram](./Step-4.png)
+![Architecture Diagram](./Success.png)
