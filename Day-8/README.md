@@ -17,17 +17,25 @@ When modifying virtual machines, you must ensure the initialization is fully com
 
 ## Screenshots
 ### 1. Task Instructions and Scenario
-Here is the initial project prompt outlining the requirements for creating Public IP
+Here is the initial project prompt outlining the requirements for attaching the data disk to the VM.
 ![Architecture Diagram](./Scenario.png)
-### 2. Toggle to Public IP
-This is where we toggle to the Public IP region to find that there has not been a IP created.
+### 2. Toggle to Virtual Machines
+This is where we toggle to the Virtual Machines to see whether the devops-vm exists and here it is below.
 ![Architecture Diagram](./Step-1.png)
-### 3. Create Public IP
-This is where we create the Public IP and name it Devops-pip.
+### 3. Virtual Machine overview
+This is where we find the Virtual Machine overview and scroll down to locate "disk"
 ![Architecture Diagram](./Step-2.png)
-### 4. Deploy IP
-Confirmation that the IP is created.
+### 4. Attach new disk
+This is where we find the disk overview then proceed to click "Create and Attach a new disk".
+![Architecture Diagram](./Step-3.png)
+### 5. Click on existing disk to attach
+This is where we find the existing "Devops-Disk", click on it and press apply to attach it.
+![Architecture Diagram](./Step-4.png)
+### 6. Successful
+The data disk is attached as you can see below.
 ![Architecture Diagram](./Step-5.png)
+
+
 
 
 
