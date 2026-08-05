@@ -18,12 +18,12 @@ This is where we toggle to Virtual Network to find that there has not been a Vne
 ### 3. Create Virtual Network name and region
 This is where we create the Virtual Network Name and in the westus region.
 ![Architecture Diagram](./Step-2.png)
-### 3. Create Subnet name and address region
+### 4. Create Subnet name and address region
 This is where we create the Subnet Name and make sure the IPv4 address is in the 10.0.0.0/16 region.
 ![Architecture Diagram](./Step-3.png)
-### 3. Subnet created
+### 5. Subnet created
 This is the confirmation that the Subnet was created.
 ![Architecture Diagram](./Subnetconfirmed-Step4.png)
-### 3. Deployment Confirmed
+### 6. Deployment Confirmed
 Deployment is confirmed.
 ![Architecture Diagram](./DeploymentConfirmed.png)
