@@ -29,6 +29,9 @@ Confirmation that the NIC is attached to the virtual machine.
 ### 6. Restart Virtual Machine
 Then we make sure we restart the virtual machine to ensure that it boots with the new hardware configured.
 ![Architecture Diagram](./Step-7.png)
+### 6. Notifications to show everything is done
+Solution
+![Architecture Diagram](./Success.png)
 
 
 
