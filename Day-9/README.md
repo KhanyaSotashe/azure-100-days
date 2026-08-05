@@ -31,7 +31,7 @@ Then we make sure we restart the virtual machine to ensure that it boots with th
 ![Architecture Diagram](./Step-7.png)
 ### 6. Notifications to show everything is done
 Solution
-![Architecture Diagram](./Success.png)
+![Architecture Diagram](./Notifications.png)
 
 
 
