@@ -17,7 +17,7 @@ This is where we toggle to the Public IP region to find that there has not been 
 ### 3. Create Public IP
 This is where we create the Public IP and name it Devops-pip.
 ![Architecture Diagram](./Step-2.png)
-### 3. Deploy IP
+### 4. Deploy IP
 Confirmation that the IP is created.
 ![Architecture Diagram](./Step-5.png)
 
