@@ -1,11 +1,12 @@
 # Day 6: Project Overview
 
-Today I was tasked with creating a Virtual Network named datacenter-vnet in the southcentral region with 192.168.0.0/24 IPv4 CIDR
+Today I was tasked with creating a Virtual Network named datacenter-vnet in the west-us region with one subnet within the Vnet in a specified IPv4 address range.
 
 ## Key Learnings
-* Learned how to create a Vnet and understood that they provide isolated network boundaries for resources in Azure.
-* I configured custom IPv4 CIDR blocks to define the private IP address space.
-* Gained experience with creating a Vnet in a specific region
+* Successfully created and configured a Virtual Network (`datacenter-vnet`) to define a secure, private IP boundary for cloud resources.
+* Segmented the VNet by designing a logical subdivision (`datacenter-subnet`) where Azure resources, like Virtual Machines, can be securely deployed.
+* Gained hands-on experience assigning a foundational IPv4 address space (10.0.0.0/16), allowing for scalable subnetting and future workload expansion.
+* Learned how subnet design is essential for separating application tiers, controlling routing, and applying targeted security rules.
 
 ## Screenshots
 ### 1. Task Instructions and Scenario
@@ -25,4 +26,4 @@ This is the confirmation that the Subnet was created.
 ![Architecture Diagram](./Subnetconfirmed-Step4.png)
 ### 3. Deployment Confirmed
 Deployment is confirmed.
-![Architecture Diagram](./Step-2.png)
+![Architecture Diagram](./DeploymentConfirmed.png)
