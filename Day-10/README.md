@@ -15,7 +15,7 @@ This is where we log into the Azure portal.
 ![Architecture Diagram](./Step-1-Log-into-Azure-portal.png)
 ### 2. Search for Virtual Machines
 This is where we search and find the existing vm called "devops-vm-pip".
-![Architecture Diagram](./Dat10seevm.png)
+![Architecture Diagram](./Day10seevm.png)
 ### 3. Stop VM from running 
 In order to attach NIC we have to ensure that that we deallocate our Virtual Machine as attaching a new one would change the machines virtual hardware configuration, just like on a physical computer we have to reboot it after installing new hardware.
 ![Architecture Diagram](./Day10savevm.png)
