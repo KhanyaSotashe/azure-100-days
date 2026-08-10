@@ -30,7 +30,7 @@ This is where we change the resource type from load balancer to network interfac
 ![Architecture Diagram](./Step-5-Find-network-interface-on-drop-down-and-click.png)
 ### 7. Find your Network Interface
 After changing resource type then you will be able to click on a drop down and every existing VM appears, click on your desired one and click "Apply".
-![Architecture Diagram](./Step-6find-vm.png)
+![Architecture Diagram](./Step-6-find-vm.png)
 ### 8. Restart VM
 After this we restart the vm to make sure it reboots with the new hardware.
 ![Architecture Diagram](./Notifications.png)
