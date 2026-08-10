@@ -1,8 +1,8 @@
 # ☁️ Azure 100 Days Challenge
 
-This folder documents my journey through the **KodeKloud 100 Days of Azure Challenge**, where I am building practical experience with Microsoft Azure through hands-on labs and real-world infrastructure scenarios.
+This folder documents my journey through the KodeKloud 100 Days of Azure Challenge, where I am building practical experience with Microsoft Azure through hands-on labs and real-world infrastructure scenarios.
 
-The goal of this challenge is to strengthen my understanding of **Azure administration, cloud infrastructure, networking, compute, storage, identity, security, and resource management** while preparing for the **Microsoft AZ-104: Azure Administrator** certification.
+The goal of this challenge is to strengthen my understanding of Azure administration, cloud infrastructure, networking, compute, storage, identity, security, and resource management while preparing for the Microsoft AZ-104: Azure Administrator certification.
 
 ## 🎯 Objectives
 
