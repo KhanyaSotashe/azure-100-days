@@ -16,4 +16,5 @@ This is where we toggle to the Virtual Machines to see whether the devops-vm exi
 ![Architecture Diagram](./Step-2.png)
 ### 3. Tag changed
 After clicking edit we find the different environments in the company then we assign it to "dev", as you can see now the tag environment is assigned to "dev".
+![Architecture Diagram](./Step-2.png)
 
