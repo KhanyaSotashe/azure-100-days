@@ -33,7 +33,7 @@ After changing resource type then you will be able to click on a drop down and e
 ![Architecture Diagram](./Step-6-find-vm.png)
 ### 8. Restart VM
 After this we restart the vm to make sure it reboots with the new hardware.
-![Architecture Diagram](./Notifications.png)
+
 
 
 
