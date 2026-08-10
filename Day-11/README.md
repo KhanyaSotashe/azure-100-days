@@ -18,7 +18,7 @@ This is where we toggle to the Virtual Machines to see whether the xfusion-vm ex
 This is where we stop the virtual machine from running since we'll be making a change to the hardware the click on size.
 ![Architecture Diagram](./Step-3.png)
 ### 4. Change Size
-If you look it currently says the "Current size" is Standard_B1s, we want to change it to B2s, scroll down and click on B2s
+This is where we change the size from B1s to B2s, scroll down and click on B2s and click on "Resize".
 ![Architecture Diagram](./Step-5.png)
 ### 5. Restart Virtual machine
 The size has been changed as you can see from the notifications and the Virtual machine has been restarted.
