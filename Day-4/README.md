@@ -8,7 +8,7 @@ Today I was tasked with creating a virtual network named devops-vnet in the east
 
 ## Screenshots
 ### 1. Task Instructions and Scenario
-Here is the initial Project prompt outlining the requirements for building a vnet.
+Here is the initial Project prompt outlining the requirements for building a Vnet.
 ![Scenario](./Scenario.png)
 ### 2. Creating the Virtual Network
 Setting up the basic Vnet configurations in the Azure Portal.
