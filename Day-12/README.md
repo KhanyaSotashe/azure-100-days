@@ -10,11 +10,14 @@ Today I was tasked with adding a tag to a Virtual Machine .
 ## Screenshots
 ### 1. Task Instructions and Scenario
 Here is the initial project prompt outlining the requirements for changing the Virtual Machine size.
-![Architecture Diagram](./Scenario.png)
+![Architecture Diagram](./scenario.png)
 ### 2. Toggle to Virtual Machines
 This is where we toggle to the Virtual Machines to see whether the devops-vm exists and here it is below.
-![Architecture Diagram](./Step-2.png)
+![Architecture Diagram](./step-2.png)
+### 3. Look for Tags
+After clicking on the VM we look for "Tags", as we can see there is no tag assigned as of yet.
+![Architecture Diagram](./step-3-click-add-tag.png)
 ### 3. Tag changed
-After clicking edit we find the different environments in the company then we assign it to "dev", as you can see now the tag environment is assigned to "dev".
-![Architecture Diagram](./Step-2.png)
+After clicking on it we find the different environments in the company then we assign it to "dev", as you can see now the tag environment is assigned to "dev".
+![Architecture Diagram](./step-4-added-tag.png)
 
