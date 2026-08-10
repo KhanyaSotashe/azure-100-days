@@ -32,18 +32,27 @@ The goal of this challenge is to strengthen my understanding of Azure administra
 | Day | Topic | Key Learning |
 |---|---|---|
 | Day 1 | SSH Key Pair | Configured an RSA SSH key pair for Azure VM authentication |
+| Day 2 | Azure Virtual Machine | Created and configured an Azure VM |
+| Day 3 | Azure VM using CLI | Created and configured a VM using Azure CLI |
+| Day 4 | Virtual Network (VNet) | Created an Azure VNet and configured its address space |
+| Day 5 | IPv4 VNet Configuration | Configured a VNet using a specific IPv4 CIDR range |
+| Day 6 | Azure Subnet | Created a subnet within an Azure VNet |
+| Day 7 | Public IP Address | Created a public IP resource for Azure infrastructure |
+| Day 8 | Managed Disk Attachment | Attached an existing managed disk to a VM |
+| Day 9 | Network Interface Card (NIC) | Attached an additional NIC to an Azure VM |
+| Day 10 | Public IP Assignment | Associated a public IP address with a VM's NIC |
 | Day 11 | VM Resizing | Resized a VM to provide additional compute resources |
 | Day 12 | Resource Tagging | Applied tags to organize and manage Azure resources |
-| ... | ... | ... |
+| Day 13 | SSH into Azure VM | Configured secure, password-less SSH access to an Azure VM |
 
 ## 💡 What I'm Learning
 
-Throughout the challenge, I am focusing not only on completing each lab but also on understanding **why** each configuration is required and how it applies to real-world cloud administration.
+Throughout the challenge, I am focusing not only on completing each lab but also on understanding why each configuration is required and how it applies to real-world cloud administration.
 
-Each day's folder contains my practical work, key learnings, and notes from the corresponding Azure lab.
+Each day's folder contains my practical work, key learning and notes from the corresponding Azure lab.
 
 ## 🚀 Career Goal
 
-I am using this challenge to build a strong foundation in **Cloud Engineering and Cloud Security**, while developing the practical skills required to administer and manage Azure environments.
+I am using this challenge to build a strong foundation in Cloud Engineering and Cloud Security, while developing the practical skills required to administer and manage Azure environments.
 
 > **Learn → Build → Document → Improve**
