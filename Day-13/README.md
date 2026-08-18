@@ -11,7 +11,7 @@ Today I was tasked with adding an SSH public key on a Virtual Machine for secure
 ### 1. Task Instructions and Scenario
 Here is the initial project prompt outlining the requirements for adding an SSH public key to the VM.
 ![Architecture Diagram](./Scenario1.png)
-![Architecture Diagram](./Scenaro2.png)
+![Architecture Diagram](./Scenario2.png)
 ### 2. Check current directory
 This is where I check which directory I am in and in this case its the root directory
 ![Architecture Diagram](./Step-1.png)
