@@ -1,6 +1,6 @@
 # Day 14: Project Overview
 
-Today I was tasked with provisioning a standalone Azure Managed Disk. This exercise focused on configuring block-level storage resources..
+Today I was tasked with provisioning a standalone Azure Managed Disk. This exercise focused on configuring block-level storage resources.
 
 ## Key Learnings
 **Storage Management:** Successfully created an Azure Managed Disk, learning how to provision storage capacity dynamically based on project requirements.
