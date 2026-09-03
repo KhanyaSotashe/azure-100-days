@@ -1,45 +1,48 @@
 # Day 14: Project Overview
 
-Today, I was tasked with creating and attaching a new managed data disk to an existing Azure Virtual Machine. This exercise focused on expanding VM storage capabilities dynamically without disrupting the operating system drive.
+Today I was tasked with provisioning a standalone Azure Managed Disk. This exercise focused on configuring block-level storage resources..
 
 ## Key Learnings
+**Storage Management:** Successfully created an Azure Managed Disk, learning how to provision storage capacity dynamically based on project requirements.
+**Block-Level Storage:** Deepened my understanding of how Azure handles block storage behind the scenes, ensuring high availability and durability.
+**Disk Configurations:** Explored different performance tiers (like Standard HDD, Standard SSD, and Premium SSD) and redundancy options (like LRS or ZRS) that dictate how data is replicated and accessed.
 
-**Storage Management:** Successfully provisioned and attached an Azure Managed Disk dynamically. This simulates real-world scenarios where application storage requirements scale post-deployment.
-**Block-Level Storage:** Deepened my understanding of Managed Disks as highly available, block-level storage resources managed natively by the Microsoft Azure infrastructure.
-**Data Disk vs. OS Disk:** Practically applied cloud best practices by separating the host operating system from application data, ensuring the data disk persists independently of the VM's lifecycle.
+## Why Standalone Disks Matter
 
-## Why Wait for VM Initialization?
+While data disks are eventually attached to compute resources, provisioning them independently first is a common cloud practice. 
 
-When modifying infrastructure such as attaching a new disk, it is critical to ensure the virtual machine has completed initialization and is in a stable state (either "Running" or "Stopped (Deallocated)") rather than "Creating" or "Updating".
+### Here is why it is useful:
 
-### Here is why this is important:
-
-1. **Azure Resource Locks:** While a VM is provisioning, the Azure Resource Manager (ARM) places a lock on it to prevent conflicting changes. Attempting to attach a disk during this phase will usually result in a failed deployment error.
-2. **Guest OS Hardware Detection:** The virtual machine's guest operating system needs to be completely booted to load its storage drivers. If you attach a disk before the OS is ready to listen for hardware changes, the disk may not mount correctly, preventing you from initializing and formatting it.
-3. **Automated Validation Scripts:** For lab environments like KodeKloud, automated grading scripts query the VM's state through the Azure API. If the VM is still reporting as "Updating," the validation check might skip the disk verification entirely and mark the task as incomplete.
+1. **Independent Lifecycles:** Creating a disk separately ensures the data persists even if an associated VM is later deleted or re-provisioned. 
+2. **Migration and Backup:** Standalone disks can be created from snapshots or backups, making it easier to migrate data across regions or restore systems in a disaster recovery scenario.
+3. **Infrastructure as Code (IaC):** In automated environments, storage and compute are often provisioned as separate modules before being linked together later in the deployment pipeline.
 
 ## Screenshots
 
 ### 1. Task Instructions and Scenario
-Here is the initial project prompt outlining the requirements for attaching the data disk to the VM.
+Here is the initial project prompt outlining the requirements for creating the managed data disk.
 ![Task Scenario](./Scenario.png)
 
-### 2. Toggle to Virtual Machines
-Toggling to the Virtual Machines blade to confirm the `devops-vm` is provisioned and running.
-![VM Status](./Step-1.png)
+### 2. Navigate to Disks
+Searching for and selecting the "Disks" service from the Azure Portal global search bar.
+![Navigate to Disks](./Step-1.png)
 
-### 3. Virtual Machine Overview
-Navigating to the Virtual Machine overview and scrolling down to locate the "Disks" setting under the storage configuration.
-![Disk Settings](./Step-2.png)
+### 3. Create a New Disk
+Clicking "Create" to begin configuring the new managed disk settings.
+![Create Disk](./Step-2.png)
 
-### 4. Attach New Disk
-Accessing the disk management pane and clicking "Create and attach a new disk" to begin provisioning.
-![Attach New Disk](./Step-3.png)
+### 4. Configure Basics
+Setting up the essential details, including the subscription, resource group, disk name, and region.
+![Configure Basics](./Step-3.png)
 
-### 5. Click on Existing Disk to Attach
-Locating the pre-configured "Devops-Disk", selecting it, and applying the changes to attach it to the VM.
-![Select Disk](./Step-4.png)
+### 5. Select Disk Size and Performance
+Choosing the appropriate disk tier and size (in GiB) based on the required IOPS and throughput for the scenario.
+![Select Size](./Step-4.png)
 
-### 6. Successful
-Verification that the data disk has been successfully attached and is ready for initialization within the guest OS.
-![Successful Attachment](./Step-5.png)
+### 6. Review and Create
+Passing final validation and clicking "Create" to initialize the deployment.
+![Review and Create](./Step-5.png)
+
+### 7. Deployment Successful
+Verification that the Azure Managed Disk has been successfully provisioned and is ready for use.
+![Deployment Successful](./Step-6.png)
