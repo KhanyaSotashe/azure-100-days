@@ -25,24 +25,26 @@ Here is the initial project prompt outlining the requirements for creating the m
 
 ### 2. Navigate to Disks
 Searching for and selecting the "Disks" service from the Azure Portal global search bar.
-![Navigate to Disks](./Step-1.png)
+![Navigate to Disks](./Step2.png)
 
 ### 3. Create a New Disk
 Clicking "Create" to begin configuring the new managed disk settings.
-![Create Disk](./Step-2.png)
+![Create Disk](./Step3.png)
 
 ### 4. Configure Basics
 Setting up the essential details, including the subscription, resource group, disk name, and region.
-![Configure Basics](./Step-3.png)
+![Configure Basics](./Step6.png)
+
 
 ### 5. Select Disk Size and Performance
 Choosing the appropriate disk tier and size (in GiB) based on the required IOPS and throughput for the scenario.
-![Select Size](./Step-4.png)
+![Select Size](./Step4.png)
+![Select Size](./Step5.png)
 
 ### 6. Review and Create
 Passing final validation and clicking "Create" to initialize the deployment.
-![Review and Create](./Step-5.png)
+![Review and Create](./Step7.png)
 
 ### 7. Deployment Successful
 Verification that the Azure Managed Disk has been successfully provisioned and is ready for use.
-![Deployment Successful](./Step-6.png)
+![Deployment Successful](./Step8.png)
