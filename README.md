@@ -44,6 +44,7 @@ The goal of this challenge is to strengthen my understanding of Azure administra
 | Day 11 | VM Resizing | Resized a VM to provide additional compute resources |
 | Day 12 | Resource Tagging | Applied tags to organize and manage Azure resources |
 | Day 13 | SSH into Azure VM | Configured secure, password-less SSH access to an Azure VM |
+| Day 14 | Azure Disks | Created and attached a managed disk on Azure |
 
 ## 💡 What I'm Learning
 
