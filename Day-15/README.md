@@ -1,51 +1,49 @@
 # Day 15: Project Overview
 
-Today I was tasked with creating and configuring a network security group inn Azure.
+Today I was tasked with creating and configuring a Network Security Group (NSG) in Azure. This exercise focused on securing and filtering network traffic to and from Azure resources.
 
 ## Key Learnings
-**Storage Management:** Successfully created an Azure Managed Disk, learning how to provision storage capacity dynamically based on project requirements.
-**Block-Level Storage:** Deepened my understanding of how Azure handles block storage behind the scenes, ensuring high availability and durability.
-**Disk Configurations:** Explored different performance tiers (like Standard HDD, Standard SSD, and Premium SSD) and redundancy options (like LRS or ZRS) that dictate how data is replicated and accessed.
 
-## Why Standalone Disks Matter
+**Traffic Filtering:** Successfully created an NSG, learning how to explicitly allow or deny network traffic using inbound and outbound security rules.
+**Rule Evaluation:** Deepened my understanding of how Azure evaluates security rules based on priority numbers, protocols, source IPs and destination ports.
+  **Default Security Rules:** Explored the baseline default security rules that Azure provisions with every NSG and how they impact default connectivity within a Virtual Network.
 
-While data disks are eventually attached to compute resources, provisioning them independently first is a common cloud practice. 
+## Why Network Security Groups Matter
+
+While provisioning compute and network resources is essential, controlling the traffic that flows between them is a fundamental pillar of cloud security. NSGs act as a virtual firewall for your Azure infrastructure.
 
 ### Here is why it is useful:
 
-1. **Independent Lifecycles:** Creating a disk separately ensures the data persists even if an associated VM is later deleted or re-provisioned. 
-2. **Migration and Backup:** Standalone disks can be created from snapshots or backups, making it easier to migrate data across regions or restore systems in a disaster recovery scenario.
-3. **Infrastructure as Code (IaC):** In automated environments, storage and compute are often provisioned as separate modules before being linked together later in the deployment pipeline.
+1. **Granular Access Control:** NSGs allow you to define exactly what type of traffic is permitted to reach specific resources, drastically minimizing the attack surface (e.g., restricting RDP or SSH access to known IP ranges).
+2. **Flexible Attachment:** NSGs can be associated with individual network interfaces (NICs) for VM-specific rules or attached to entire subnets to apply a blanket security policy across multiple resources simultaneously.
+3. **Application Security Groups (ASGs):** NSGs integrate closely with ASGs to simplify complex rule management, allowing you to group VMs by their workload (like "Web Servers" or "Databases") rather than managing sprawling lists of individual IP addresses.
 
 ## Screenshots
 
 ### 1. Task Instructions and Scenario
-Here is the initial project prompt outlining the requirements for creating the managed data disk.
+Here is the initial project prompt outlining the requirements for creating and configuring the network security group.
 ![Task Scenario](./Scenario.png)
 
-### 2. Navigate to Disks
-Searching for and selecting the "Disks" service from the Azure Portal global search bar.
-![Navigate to Disks](./Step2.png)
+### 2. Navigate to Network Security Groups
+Searching for and selecting the "Network security groups" service from the Azure Portal global search bar.
+![Navigate to NSGs](./Step-1.png)
 
-### 3. Create a New Disk
-Clicking "Create" to begin configuring the new managed disk settings.
-![Create Disk](./Step3.png)
+### 3. Create a New NSG
+Clicking "Create" to begin configuring the network security group settings.
+![Create NSG](./Step-2.png)
 
 ### 4. Configure Basics
-Setting up the essential details, including the subscription, resource group, disk name, and region.
-![Configure Basics](./Step6.png)
+Setting up the essential details, including the subscription, resource group, NSG name, and region.
+![Configure Basics](./Step-3.png)
 
-
-### 5. Select Disk Size and Performance
-Choosing the appropriate disk tier and size (in GiB) based on the required IOPS and throughput for the scenario.
-![Select Size](./Step4.png)
-![Select Size](./Step5.png)
+### 5. Add Inbound Security Rule
+Configuring a custom inbound rule to allow specific traffic (e.g., HTTP on port 80 or SSH on port 22) and assigning it a priority number.
+![Add Inbound Rule](./Step-4.png)
 
 ### 6. Review and Create
 Passing final validation and clicking "Create" to initialize the deployment.
-![Review and Create](./Step7.png)
+![Review and Create](./Step-5.png)
 
 ### 7. Deployment Successful
-Verification that the Azure Managed Disk has been successfully provisioned and is ready for use.
-![Deployment Successful](./Step8.png)
-
+Verification that the Network Security Group has been successfully provisioned and the security rules are active.
+![Deployment Successful](./Step-6.png)
