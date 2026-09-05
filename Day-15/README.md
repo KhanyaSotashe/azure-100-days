@@ -25,25 +25,20 @@ Here is the initial project prompt outlining the requirements for creating and c
 ![Task Scenario](./Scenario.png)
 
 ### 2. Navigate to Network Security Groups
-Searching for and selecting the "Network security groups" service from the Azure Portal global search bar.
-![Navigate to NSGs](./Step-1.png)
+Search for and select the "Network security groups" service from the Azure Portal global search bar.
+![Navigate to NSGs](./Step2.png)
 
-### 3. Create a New NSG
-Clicking "Create" to begin configuring the network security group settings.
-![Create NSG](./Step-2.png)
-
-### 4. Configure Basics
+### 3.Create and Configure Basics
 Setting up the essential details, including the subscription, resource group, NSG name, and region.
-![Configure Basics](./Step-3.png)
+![Configure Basics](./Step3.png)
 
-### 5. Add Inbound Security Rule
-Configuring a custom inbound rule to allow specific traffic (e.g., HTTP on port 80 or SSH on port 22) and assigning it a priority number.
-![Add Inbound Rule](./Step-4.png)
+### 5. Add HTTP
+Configuring a custom inbound rule to allow HTTP traffic and assigning it a priority number.
+![Add Inbound Rule](./Step7.png)
+![Add Inbound Rule](./Step8.png)
 
-### 6. Review and Create
-Passing final validation and clicking "Create" to initialize the deployment.
-![Review and Create](./Step-5.png)
+### 5. Add SSH
+Configuring a custom inbound rule to allow SSH traffic and assigning it a priority number.
+![Add Inbound Rule](./Step9.png)
+![Add Inbound Rule](./Step10.png)
 
-### 7. Deployment Successful
-Verification that the Network Security Group has been successfully provisioned and the security rules are active.
-![Deployment Successful](./Step-6.png)
