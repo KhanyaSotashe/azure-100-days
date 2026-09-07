@@ -26,20 +26,20 @@ Here is the initial project prompt outlining the requirements for creating the p
 
 ### 2. Navigate to Storage Accounts
 Searching for and selecting the "Storage accounts" service from the Azure Portal global search bar.
-![Navigate to Storage](./Step-1.png)
+![Navigate to Storage](./Step2.png)
 
 ### 3. Create a Storage Account
 Configuring the fundamental settings for the storage account, including the resource group, globally unique storage account name and region.
-![Create Storage Account](./Step-2.png)
+![Create Storage Account](./Step3.png)
 
 ### 4. Create a Container
 Navigating to the "Containers" blade within the newly deployed storage account and clicking "+ Container" to add a new one.
-![Create Container](./Step-3.png)
+![Create Container](./Step6.png)
 
 ### 5. Configure Private Access Level
 Naming the container and ensuring the "Public access level" is strictly set to **Private (no anonymous access)**.
-![Set Access Level](./Step-4.png)
+![Set Access Level](./Step7.png)
 
 ### 6. Deployment Successful
 Verification that the storage container has been successfully provisioned and is securely locked down from public access.
-![Deployment Successful](./Step-5.png)
+![Deployment Successful](./Step8.png)
