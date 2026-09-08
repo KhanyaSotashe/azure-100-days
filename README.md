@@ -47,6 +47,7 @@ The goal of this challenge is to strengthen my understanding of Azure administra
 | Day 14 | Azure Disks | Created and attached a managed disk on Azure |
 | Day 15 | Network Security Groups |Create and configure a network security group in Azure.
 | Day 16 | Blob Storages |Create a private Blob storage container in Azure.
+| Day 17 | Blob Storages |Create a public Blob storage container in Azure.
 
 ## 💡 What I'm Learning
 
