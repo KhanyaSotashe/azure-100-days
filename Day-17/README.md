@@ -5,7 +5,7 @@ Today I was tasked with creating an Azure Storage Account and provisioning a pub
 ## Key Learnings
 
 **Storage Account Provisioning:** Successfully deployed an Azure Storage Account, navigating through the Basics, Advanced and Networking configuration tabs to tailor the resource.
-**Public Container Configuration:** Created a blob container and intentionally configured its public access level to allow anonymous read access for blobs, enabling direct internet access.
+***Public Container Configuration:** Created a blob container and intentionally configured its public access level to allow anonymous read access for blobs, enabling direct internet access.
 **Access Level Validation:** Deepened my understanding of how Azure routes public requests by uploading a test file and successfully accessing it via its public URI without authentication.
 
 ## Why Public Blob Storage Matters
