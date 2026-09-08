@@ -4,9 +4,9 @@ Today I was tasked with creating and configuring a Network Security Group (NSG) 
 
 ## Key Learnings
 
-**Traffic Filtering:** Successfully created an NSG, learning how to explicitly allow or deny network traffic using inbound and outbound security rules.
-**Rule Evaluation:** Deepened my understanding of how Azure evaluates security rules based on priority numbers, protocols, source IPs and destination ports.
-  **Default Security Rules:** Explored the baseline default security rules that Azure provisions with every NSG and how they impact default connectivity within a Virtual Network.
+* **Traffic Filtering:** Successfully created an NSG, learning how to explicitly allow or deny network traffic using inbound and outbound security rules.
+* **Rule Evaluation:** Deepened my understanding of how Azure evaluates security rules based on priority numbers, protocols, source IPs and destination ports.
+* **Default Security Rules:** Explored the baseline default security rules that Azure provisions with every NSG and how they impact default connectivity within a Virtual Network.
 
 ## Why Network Security Groups Matter
 
