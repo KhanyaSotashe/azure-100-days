@@ -26,40 +26,36 @@ Reviewing the initial project prompt outlining the requirements for creating the
 
 ### 2. Navigate to Storage Accounts
 Searching for and selecting the "Storage accounts" service from the Azure Portal global search bar.
-![Navigate to Storage](./Step-1.png)
+![Navigate to Storage](./Step1.png)
 
 ### 3. Initialize Creation
 Clicking the "+ Create" button to open the deployment wizard for a new Storage Account.
-![Initialize Creation](./Step-2.png)
+![Initialize Creation](./Step2.png)
 
 ### 4. Configure Basics
 Setting up the fundamental details: selecting the Subscription, creating/selecting a Resource Group, inputting a globally unique Storage account name, and choosing the Region, Performance (Standard), and Redundancy (LRS/GRS) options.
-![Configure Basics](./Step-3.png)
+![Configure Basics](./Step3.png)
 
 ### 5. Advanced Configuration (Enable Public Access)
-Navigating to the "Advanced" tab to ensure that the "Allow Blob public access" setting is enabled at the storage account level. This prerequisite must be toggled on before individual containers can be made public.
-![Enable Public Access](./Step-4.png)
+Navigating to the "Security" tab to ensure that the "Allow enabling anonymous access on individual containers" setting is enabled at the storage account level. This prerequisite must be toggled on before individual containers can be made public.
+![Enable Public Access](./Step4.png)
 
 ### 6. Review and Deploy
 Passing the final automated validation checks and clicking "Create" to initialize the ARM template deployment. 
-![Review and Create](./Step-5.png)
+![Review and Create](./Step5.png)
 
 ### 7. Go to Resource
 Once the deployment succeeds, clicking "Go to resource" to access the newly created Storage Account management plane.
-![Go to Resource](./Step-6.png)
+![Go to Resource](./Step6.png)
 
 ### 8. Navigate to Containers
 Scrolling down the left-hand menu to the "Data storage" section and selecting "Containers", then clicking "+ Container".
-![Navigate to Containers](./Step-7.png)
+![Navigate to Containers](./Step7.png)
 
 ### 9. Configure Container Access Level
-Naming the new container (e.g., `public-assets`) and explicitly expanding the advanced access level dropdown to select **Blob (anonymous read access for blobs only)**.
-![Set Access Level](./Step-8.png)
+Naming the new container and explicitly expanding the advanced access level dropdown to select **Blob (anonymous read access for containers and blobs)**.
+![Set Access Level](./Step8.png)
 
-### 10. Upload a Test Blob
-Clicking into the newly created container, selecting "Upload", and browsing for a local test file (like a sample image or text document) to upload into the storage space.
-![Upload File](./Step-9.png)
-
-### 11. Validate Public Access
-Clicking on the uploaded file to view its properties, copying the generated "URL", and pasting it into a new, incognito browser tab to verify that the file loads successfully without prompting for Azure credentials.
-![Validate Access](./Step-10.png)
+### 10. Confirmation that the Container was created
+The container has been created and its not private.
+![Upload File](./Step9.png)
