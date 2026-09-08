@@ -4,9 +4,9 @@ Today I was tasked with creating a private Azure Blob Storage container. This ex
 
 ## Key Learnings
 
-**Storage Account Provisioning:** Successfully created an Azure Storage Account which serves as the top-level administrative namespace for blob data.
-**Container Configuration:** Provisioned a blob container and explicitly configured its public access level to "Private" to enforce data security.
-**Access Control Foundations:** Deepened my understanding of how Azure isolates data from the public internet, requiring explicit authorization (like SAS tokens or Entra ID) to access stored blobs.
+* **Storage Account Provisioning:** Successfully created an Azure Storage Account which serves as the top-level administrative namespace for blob data.
+* **Container Configuration:** Provisioned a blob container and explicitly configured its public access level to "Private" to enforce data security.
+* **Access Control Foundations:** Deepened my understanding of how Azure isolates data from the public internet, requiring explicit authorization (like SAS tokens or Entra ID) to access stored blobs.
 
 ## Why Private Blob Storage Matters
 
