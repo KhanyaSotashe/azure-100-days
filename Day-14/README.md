@@ -3,9 +3,9 @@
 Today I was tasked with provisioning a standalone Azure Managed Disk. This exercise focused on configuring block-level storage resources.
 
 ## Key Learnings
-**Storage Management:** Successfully created an Azure Managed Disk, learning how to provision storage capacity dynamically based on project requirements.
-**Block-Level Storage:** Deepened my understanding of how Azure handles block storage behind the scenes, ensuring high availability and durability.
-**Disk Configurations:** Explored different performance tiers (like Standard HDD, Standard SSD, and Premium SSD) and redundancy options (like LRS or ZRS) that dictate how data is replicated and accessed.
+* **Storage Management:** Successfully created an Azure Managed Disk, learning how to provision storage capacity dynamically based on project requirements.
+* **Block-Level Storage:** Deepened my understanding of how Azure handles block storage behind the scenes, ensuring high availability and durability.
+* **Disk Configurations:** Explored different performance tiers (like Standard HDD, Standard SSD, and Premium SSD) and redundancy options (like LRS or ZRS) that dictate how data is replicated and accessed.
 
 ## Why Standalone Disks Matter
 
