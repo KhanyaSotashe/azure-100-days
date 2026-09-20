@@ -19,21 +19,24 @@ Moving on-premise data to cloud storage is a fundamental aspect of modernizing I
 
 ## Step-by-Step Execution
 
+### 1. Task Instructions and Scenario
+Reviewing the initial project prompt outlining the requirements for creating uploading a file to an Azure blob storage.
+![Task Scenario](./Scenario.png)
 
-### 1. Authenticate to Azure Portal
+### 2. Authenticate to Azure Portal
 Navigated to "https://portal.azure.com" and logged in using the retrieved credentials.
 ![Portal Login](./Step-1.png)
 
-### 2. Locate the Target Storage Account
+### 3. Locate the Target Storage Account
 Searched for "Storage accounts" in the Azure Portal global search bar and selected the pre-provisioned account named "nautilusst878831534", confirming it was located in the "southcentralus" region.
 ![Locate Storage Account](./Step-2.png)
 
-### 3. Verify the Target Blob Container
+### 4. Verify the Target Blob Container
 Scrolled to the "Data storage" section on the left-hand menu, selected "Containers" and verified the existence of the destination container named "nautilus-blob-878831534".
 ![Verify Container](./Step-3.png)
 ![Verify Container](./Step-4.png)
 
-### 4. Execute the Data Transfer
+### 5. Execute the Data Transfer
 Using the "azure-client" terminal, I utilized Azure CLI to upload the local on-premise file to the cloud. Authenticated the CLI and executed the upload command targeting the file at "/tmp/devops.txt" to place it directly into the "devops-blob-594721688" container.
 ![Execute Transfer](./Step-5.png)
 ![Execute Transfer](./Step-6.png)
@@ -41,6 +44,6 @@ Using the "azure-client" terminal, I utilized Azure CLI to upload the local on-p
 ![Execute Transfer](./Step-8.png)
 
 
-### 5. Validate the Migration
+### 6. Validate the Migration
 Returned to the Azure Portal, opened the "devops-blob-594721688" container and verified that "devops.txt" was successfully listed inside, confirming the data migration was complete.
 ![Validate Migration](./Confirmation.png)
