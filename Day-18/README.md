@@ -1,6 +1,8 @@
 # Day 18: Project Overview
 
-Today I was tasked with assisting the Nautilus DevOps team in a data migration scenario, specifically transferring data from an on-premise storage system to an Azure Blob container. The exercise focused on interacting with pre-existing Azure Storage resources and securely copying a local file to a specific container using the command line. **I restarted my lab, you'll notice my screenshots contain "Nautilus" rather than "Devops" for my container and storage account**
+Today I was tasked with assisting the Nautilus DevOps team in a data migration scenario, specifically transferring data from an on-premise storage system to an Azure Blob container. The exercise focused on interacting with pre-existing Azure Storage resources and securely copying a local file to a specific container using the command line. 
+
+NOTE :**I restarted my lab, you'll notice my screenshots contain "Nautilus" rather than "Devops" for my container and storage account**
 
 ## Key Learnings
 * **Data Migration:** Successfully transferred a local file `/tmp/devops.txt` to a cloud-based Azure Blob container.
